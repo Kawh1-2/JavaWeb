@@ -4,9 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.ss</groupId>
+    <parent>
+        <groupId>com.ss</groupId>
+        <artifactId>tlias-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../tlias-parent/pom.xml</relativePath>
+    </parent>
+
     <artifactId>tlias-pojo</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>26</maven.compiler.source>
@@ -15,19 +20,5 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.46</version>
-            <optional>true</optional>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>4.0.1</version>
-        </dependency>
-
-
     </dependencies>
 </project>
